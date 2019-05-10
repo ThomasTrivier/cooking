@@ -10608,7 +10608,7 @@ body header .carousel-inner .carousel-item img {
           filter: brightness(50%);
 }
 
-.content .info {
+.info {
   background-image: url("../img/main_bg.jpg");
   background-size: cover;
   background-position: center;
@@ -10616,20 +10616,38 @@ body header .carousel-inner .carousel-item img {
   text-align: center;
 }
 
-.content .info .container {
+.info .container {
   background-color: green;
-  margin: 50px 0;
+  margin: 50px auto;
 }
 
-.content .info .container .story p {
+.info .container .story p {
   padding: 20px 140px;
 }
 
-.content .info .container .story span {
+.info .container .story span {
   color: #dc3545;
 }
 
-.content .info .container .menu span {
+.info .container .menu span {
   color: #dc3545;
+}
+
+.staff {
+  background-image: url("../img/team_background.jpg");
+  text-align: center;
+  color: #f8f9fa;
+}
+
+.staff .titre {
+  padding: 4rem 0;
+}
+
+.staff .titre span {
+  color: #dc3545;
+}
+
+.staff .container img {
+  border-bottom: 1px solid #6c757d;
 }
 /*# sourceMappingURL=main.css.map */
