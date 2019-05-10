@@ -4,6 +4,7 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css?family=Courgette");
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -10619,16 +10620,26 @@ body header .carousel-inner .carousel-item img {
   background-color: #f8f9fa;
 }
 
+.info .container .story h2 {
+  font-family: Courgette;
+}
+
 .info .container .story p {
   padding: 20px 155px;
 }
 
 .info .container .story span {
   color: #dc3545;
+  font-size: 50px;
+}
+
+.info .container .menu h2 {
+  font-family: Courgette;
 }
 
 .info .container .menu span {
   color: #dc3545;
+  font-size: 50px;
 }
 
 .staff {
@@ -10639,10 +10650,12 @@ body header .carousel-inner .carousel-item img {
 
 .staff .titre {
   padding: 4rem 0;
+  font-family: Courgette;
 }
 
 .staff .titre span {
   color: #dc3545;
+  font-size: 50px;
 }
 
 .staff .container img {
@@ -10659,8 +10672,13 @@ body header .carousel-inner .carousel-item img {
   background-color: #f8f9fa;
 }
 
+.blog .container .reservation h2 {
+  font-family: Courgette;
+}
+
 .blog .container .reservation span {
   color: #dc3545;
+  font-size: 50px;
 }
 
 .blog .container .reservation .container {
@@ -10707,11 +10725,13 @@ body header .carousel-inner .carousel-item img {
 
 .blog .container .social .titre {
   padding: 4rem 0;
+  font-family: Courgette;
   text-align: center;
 }
 
 .blog .container .social .titre span {
   color: #dc3545;
+  font-size: 50px;
 }
 
 .blog .container .social .col-6 .contour {
@@ -10734,10 +10754,12 @@ body header .carousel-inner .carousel-item img {
 
 .testimonial .titre {
   padding: 4rem;
+  font-family: Courgette;
 }
 
 .testimonial .titre span {
   color: #dc3545;
+  font-size: 50px;
 }
 
 .testimonial .titre h2 {
@@ -10767,5 +10789,71 @@ body header .carousel-inner .carousel-item img {
   width: 160px;
   border-radius: 50%;
   border: 5px solid lightgrey;
+}
+
+.contact {
+  background-image: url("../img/main_bg.jpg");
+  padding-bottom: 4rem;
+}
+
+.contact .titre {
+  padding: 4rem;
+  font-family: Courgette;
+}
+
+.contact .titre span {
+  color: #dc3545;
+  font-size: 50px;
+}
+
+.contact .container .row .col-4 {
+  background-color: #dc3545;
+  border-radius: 10px;
+  color: #f8f9fa;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.contact .container .row .col-4 .ligne {
+  border-bottom: 1px solid #f8f9fa;
+  padding-bottom: 10px;
+}
+
+.contact .container .row .col-4 i {
+  font-size: 40px;
+  padding-bottom: 10px;
+}
+
+.about {
+  background-image: url("../img/footer_background.jpg");
+  color: #f8f9fa;
+  padding: 3rem;
+}
+
+.about p {
+  font-size: 14px;
+  margin-top: 2rem;
+}
+
+.about i {
+  font-size: 25px;
+  padding-right: 20px;
+}
+
+.about .espace {
+  margin-top: 2rem;
+}
+
+.about button {
+  background-color: #dc3545;
+  color: #f8f9fa;
+  border-radius: 20px;
+  padding: 8px 9px;
+}
+
+.copyright {
+  background-color: #dc3545;
+  color: #f8f9fa;
+  padding: 30px;
 }
 /*# sourceMappingURL=main.css.map */
