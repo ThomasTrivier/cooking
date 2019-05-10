@@ -10652,6 +10652,7 @@ body header .carousel-inner .carousel-item img {
 .blog {
   background-image: url("../img/main_bg.jpg");
   padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .blog .container {
@@ -10724,5 +10725,47 @@ body header .carousel-inner .carousel-item img {
 
 .blog .container .social .col-6 .texte h5 {
   font-weight: bold;
+}
+
+.testimonial {
+  background-image: url("../img/testimonials_background.jpg");
+  padding-bottom: 4rem;
+}
+
+.testimonial .titre {
+  padding: 4rem;
+}
+
+.testimonial .titre span {
+  color: #dc3545;
+}
+
+.testimonial .titre h2 {
+  color: #f8f9fa;
+}
+
+.testimonial .container {
+  color: #f8f9fa;
+}
+
+.testimonial .container .bordure {
+  border: 1px solid grey;
+  border-radius: 10px;
+  padding: 20px 10px 10px 10px;
+}
+
+.testimonial .container span {
+  color: #dc3545;
+}
+
+.testimonial .container p {
+  margin-top: 8px;
+}
+
+.testimonial .container img {
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  border: 5px solid lightgrey;
 }
 /*# sourceMappingURL=main.css.map */
