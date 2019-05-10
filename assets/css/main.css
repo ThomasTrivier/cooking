@@ -10607,4 +10607,29 @@ body header .carousel-inner .carousel-item img {
   -webkit-filter: brightness(50%);
           filter: brightness(50%);
 }
+
+.content .info {
+  background-image: url("../img/main_bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.content .info .container {
+  background-color: green;
+  margin: 50px 0;
+}
+
+.content .info .container .story p {
+  padding: 20px 140px;
+}
+
+.content .info .container .story span {
+  color: #dc3545;
+}
+
+.content .info .container .menu span {
+  color: #dc3545;
+}
 /*# sourceMappingURL=main.css.map */
