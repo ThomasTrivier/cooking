@@ -10715,7 +10715,7 @@ body header .carousel-inner .carousel-item img {
   color: #f8f9fa;
   background-color: #dc3545;
   border-radius: 30px;
-  border: 0px;
+  border: 2px solid #dc3545;
 }
 
 .blog .container .reservation .container button:hover {
@@ -10739,12 +10739,42 @@ body header .carousel-inner .carousel-item img {
   border-radius: 20px;
 }
 
+.blog .container .social .col-6 .vignette {
+  background-color: #dc3545;
+  color: #f8f9fa;
+  border-radius: 10px;
+  padding: 10px;
+  position: absolute;
+  z-index: 2;
+  bottom: 32%;
+  left: 17%;
+}
+
+.blog .container .social .col-6 span {
+  font-size: 30px;
+}
+
 .blog .container .social .col-6 .texte {
   padding: 50px;
 }
 
 .blog .container .social .col-6 .texte h5 {
   font-weight: bold;
+}
+
+.blog .container .social .bouton button {
+  display: block;
+  margin: 0 auto;
+  padding: 15px 30px;
+  color: #f8f9fa;
+  background-color: #dc3545;
+  border-radius: 30px;
+  border: 1px solid #dc3545;
+}
+
+.blog .container .social .bouton button:hover {
+  color: #dc3545;
+  background-color: #f8f9fa;
 }
 
 .testimonial {
@@ -10849,6 +10879,12 @@ body header .carousel-inner .carousel-item img {
   color: #f8f9fa;
   border-radius: 20px;
   padding: 8px 9px;
+  border: 2px solid #dc3545;
+}
+
+.about button:hover {
+  background-color: #f8f9fa;
+  color: #dc3545;
 }
 
 .copyright {
