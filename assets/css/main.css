@@ -10564,11 +10564,14 @@ a.text-dark:hover, a.text-dark:focus {
 
 body {
   margin: 0 auto;
+  font-family: sans-serif;
 }
 
 body header .container {
+  right: 5%;
   position: absolute;
   z-index: 2;
+  top: 2%;
 }
 
 body header .container .navbar {
@@ -10583,6 +10586,7 @@ body header .container .navbar ul {
 body header .container .navbar ul li a {
   font-size: 12px;
   color: #f8f9fa;
+  padding: 15px 18px;
 }
 
 body header .container .navbar ul li a:hover {
@@ -10611,7 +10615,6 @@ body header .carousel-inner .carousel-item img {
 
 .info {
   background-image: url("../img/main_bg.jpg");
-  text-align: center;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -10625,7 +10628,7 @@ body header .carousel-inner .carousel-item img {
 }
 
 .info .container .story p {
-  padding: 20px 155px;
+  padding: 30px 0;
 }
 
 .info .container .story span {
@@ -10633,13 +10636,70 @@ body header .carousel-inner .carousel-item img {
   font-size: 50px;
 }
 
-.info .container .menu h2 {
+.info .container .menu h2, .info .container .menu h3 {
   font-family: Courgette;
+}
+
+.info .container .menu .icone {
+  border-right: 1px solid lightgrey;
+}
+
+.info .container .menu .icone h3 {
+  border-bottom: 1px solid lightgrey;
+  margin-bottom: 0;
+  padding-bottom: 5px;
+}
+
+.info .container .menu .icone i {
+  font-size: 40px;
+  padding: 10px 0;
+}
+
+.info .container .menu .icone .activated {
+  color: #dc3545;
+}
+
+.info .container .menu .prime {
+  border-right: 3px solid #dc3545;
 }
 
 .info .container .menu span {
   color: #dc3545;
   font-size: 50px;
+}
+
+.info .container .menu .rangee {
+  border-bottom: 1px dotted lightgrey;
+  padding-top: 10px;
+}
+
+.info .container .menu .boite img {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  border: 4px solid lightgrey;
+  margin: 0 10px 10px 0;
+}
+
+.info .container .menu h6 {
+  font-weight: bold;
+  margin-bottom: 0;
+  padding-left: 10px;
+  padding-top: 5px;
+}
+
+.info .container .menu p {
+  padding-left: 10px;
+}
+
+.info .container .menu button {
+  background-color: lightgrey;
+  color: #dc3545;
+  padding: 0 20px;
+  border: 0;
+  position: relative;
+  top: 25%;
+  left: 0;
 }
 
 .staff {
@@ -10681,34 +10741,34 @@ body header .carousel-inner .carousel-item img {
   font-size: 50px;
 }
 
-.blog .container .reservation .container {
+.blog .container .reservation .container-fluid {
   background-image: url("../img/book_table_bg.jpg");
-  width: 65%;
   border-radius: 10px;
   padding: 50px 100px;
 }
 
-.blog .container .reservation .container p {
+.blog .container .reservation .container-fluid p {
   color: #f8f9fa;
   margin-bottom: 3rem;
 }
 
-.blog .container .reservation .container span {
+.blog .container .reservation .container-fluid span {
   font-size: 30px;
   color: #f8f9fa;
 }
 
-.blog .container .reservation .container input {
+.blog .container .reservation .container-fluid input {
   border-radius: 10px;
   margin-bottom: 15px;
   padding: 23px;
 }
 
-.blog .container .reservation .container select {
+.blog .container .reservation .container-fluid select {
   border-radius: 10px;
+  height: 48px;
 }
 
-.blog .container .reservation .container button {
+.blog .container .reservation .container-fluid button {
   display: block;
   margin: 40px auto 0 auto;
   padding: 15px 30px;
@@ -10718,7 +10778,7 @@ body header .carousel-inner .carousel-item img {
   border: 2px solid #dc3545;
 }
 
-.blog .container .reservation .container button:hover {
+.blog .container .reservation .container-fluid button:hover {
   color: #dc3545;
   background-color: #f8f9fa;
 }
@@ -10734,31 +10794,42 @@ body header .carousel-inner .carousel-item img {
   font-size: 50px;
 }
 
-.blog .container .social .col-6 .contour {
+.blog .container .social .photo {
+  position: relative;
+}
+
+.blog .container .social .photo .contour {
   border: 4px solid lightgrey;
   border-radius: 20px;
 }
 
-.blog .container .social .col-6 .vignette {
+.blog .container .social .photo .vignette {
   background-color: #dc3545;
   color: #f8f9fa;
   border-radius: 10px;
-  padding: 10px;
+  padding: 10px 30px 10px 10px;
   position: absolute;
   z-index: 2;
   bottom: 32%;
+}
+
+.blog .container .social .photo .n1 {
   left: 17%;
 }
 
-.blog .container .social .col-6 span {
+.blog .container .social .photo .n2 {
+  right: 30%;
+}
+
+.blog .container .social .photo span {
   font-size: 30px;
 }
 
-.blog .container .social .col-6 .texte {
+.blog .container .social .photo .texte {
   padding: 50px;
 }
 
-.blog .container .social .col-6 .texte h5 {
+.blog .container .social .photo .texte h5 {
   font-weight: bold;
 }
 
@@ -10796,25 +10867,25 @@ body header .carousel-inner .carousel-item img {
   color: #f8f9fa;
 }
 
-.testimonial .container {
+.testimonial .container-fluid {
   color: #f8f9fa;
 }
 
-.testimonial .container .bordure {
+.testimonial .container-fluid .bordure {
   border: 1px solid grey;
   border-radius: 10px;
   padding: 20px 10px 10px 10px;
 }
 
-.testimonial .container span {
+.testimonial .container-fluid span {
   color: #dc3545;
 }
 
-.testimonial .container p {
+.testimonial .container-fluid p {
   margin-top: 8px;
 }
 
-.testimonial .container img {
+.testimonial .container-fluid img {
   height: 160px;
   width: 160px;
   border-radius: 50%;
@@ -10836,7 +10907,7 @@ body header .carousel-inner .carousel-item img {
   font-size: 50px;
 }
 
-.contact .container .row .col-4 {
+.contact .container-fluid .row .col-sm-4 {
   background-color: #dc3545;
   border-radius: 10px;
   color: #f8f9fa;
@@ -10844,12 +10915,12 @@ body header .carousel-inner .carousel-item img {
   padding-bottom: 10px;
 }
 
-.contact .container .row .col-4 .ligne {
+.contact .container-fluid .row .col-sm-4 .ligne {
   border-bottom: 1px solid #f8f9fa;
   padding-bottom: 10px;
 }
 
-.contact .container .row .col-4 i {
+.contact .container-fluid .row .col-sm-4 i {
   font-size: 40px;
   padding-bottom: 10px;
 }
@@ -10868,6 +10939,7 @@ body header .carousel-inner .carousel-item img {
 .about i {
   font-size: 25px;
   padding-right: 20px;
+  margin-bottom: 2rem;
 }
 
 .about .espace {
@@ -10879,12 +10951,13 @@ body header .carousel-inner .carousel-item img {
   color: #f8f9fa;
   border-radius: 20px;
   padding: 8px 9px;
-  border: 2px solid #dc3545;
+  border: 2px solid #f8f9fa;
 }
 
 .about button:hover {
   background-color: #f8f9fa;
   color: #dc3545;
+  border: 2px solid #dc3545;
 }
 
 .copyright {
