@@ -10568,7 +10568,7 @@ body {
 }
 
 body header .container {
-  right: 5%;
+  right: 2%;
   position: absolute;
   z-index: 2;
   top: 2%;
@@ -10603,14 +10603,69 @@ body header .container .navbar img {
 }
 
 body header .carousel-indicators li {
-  height: 10px;
-  width: 10px;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+}
+
+body header .carousel-indicators .active {
+  position: relative;
+}
+
+body header .carousel-indicators .active .rond {
+  position: absolute;
+  top: 2.4px;
+  left: 2.6px;
+  height: 15px;
+  width: 15px;
+  border: 3px solid #343a40;
+  z-index: 2;
   border-radius: 50%;
 }
 
 body header .carousel-inner .carousel-item img {
   -webkit-filter: brightness(50%);
           filter: brightness(50%);
+}
+
+body header .main-text {
+  position: absolute;
+  top: 27%;
+  color: #f8f9fa;
+}
+
+body header .main-text h1 {
+  font-family: Courgette;
+  font-size: 50px;
+}
+
+body header .main-text h1 .rouge {
+  color: #dc3545;
+}
+
+body header .main-text button {
+  border: 0;
+  margin-top: 3rem;
+  border-radius: 20px;
+  padding: 15px 30px;
+}
+
+body header .main-text .btn-light:hover {
+  background-color: #343a40;
+  color: #f8f9fa;
+}
+
+body header .main-text .btn-danger:hover {
+  background-color: #f8f9fa;
+  color: #dc3545;
+}
+
+body header .decoration {
+  background-image: url("../img/bottom_decoration_img.png");
+  bottom: 0;
+  left: 0;
+  height: 15px;
+  width: 100%;
 }
 
 .info {
@@ -10621,6 +10676,7 @@ body header .carousel-inner .carousel-item img {
 
 .info .container {
   background-color: #f8f9fa;
+  border: 1px solid lightgrey;
 }
 
 .info .container .story h2 {
@@ -10636,12 +10692,34 @@ body header .carousel-inner .carousel-item img {
   font-size: 50px;
 }
 
+.info .container .story img:first-child {
+  position: absolute;
+  left: 0;
+}
+
+.info .container .story .droite {
+  position: absolute;
+  right: 0;
+}
+
 .info .container .menu h2, .info .container .menu h3 {
   font-family: Courgette;
 }
 
+.info .container .menu .lgn {
+  border-right: 1px solid lightgrey;
+}
+
 .info .container .menu .icone {
   border-right: 1px solid lightgrey;
+}
+
+.info .container .menu .icone:hover {
+  border-right: 3px solid #dc3545;
+}
+
+.info .container .menu .icone:hover i {
+  color: #dc3545;
 }
 
 .info .container .menu .icone h3 {
@@ -10668,42 +10746,51 @@ body header .carousel-inner .carousel-item img {
   font-size: 50px;
 }
 
-.info .container .menu .rangee {
-  border-bottom: 1px dotted lightgrey;
-  padding-top: 10px;
-}
-
 .info .container .menu .boite img {
-  height: 80px;
   width: 80px;
+  height: 80px;
   border-radius: 50%;
   border: 4px solid lightgrey;
   margin: 0 10px 10px 0;
 }
 
-.info .container .menu h6 {
+.info .container .menu tr {
+  border-bottom: 1px dotted lightgrey;
+}
+
+.info .container .menu tr td {
+  padding: 10px 0;
+}
+
+.info .container .menu tr td h6 {
   font-weight: bold;
   margin-bottom: 0;
-  padding-left: 10px;
   padding-top: 5px;
 }
 
-.info .container .menu p {
-  padding-left: 10px;
-}
-
-.info .container .menu button {
+.info .container .menu tr td .argent {
   background-color: lightgrey;
   color: #dc3545;
-  padding: 0 20px;
-  border: 0;
-  position: relative;
-  top: 25%;
+  padding: 0 15px;
+  margin-top: 28px;
+  margin-left: 10px;
+}
+
+.info .container .menu .gauche {
+  position: absolute;
+  bottom: 0;
   left: 0;
+}
+
+.info .container .menu .droite {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 .staff {
   background-image: url("../img/team_background.jpg");
+  background-position: center;
   text-align: center;
   color: #f8f9fa;
 }
@@ -10730,6 +10817,15 @@ body header .carousel-inner .carousel-item img {
 
 .blog .container {
   background-color: #f8f9fa;
+  border: 1px solid lightgrey;
+}
+
+.blog .container .reservation img:first-child {
+  left: 0;
+}
+
+.blog .container .reservation .droite {
+  right: 0;
 }
 
 .blog .container .reservation h2 {
@@ -10741,8 +10837,9 @@ body header .carousel-inner .carousel-item img {
   font-size: 50px;
 }
 
-.blog .container .reservation .container-fluid {
+.blog .container .reservation .container-fluid .col-sm-8 {
   background-image: url("../img/book_table_bg.jpg");
+  background-position: center;
   border-radius: 10px;
   padding: 50px 100px;
 }
@@ -10760,17 +10857,17 @@ body header .carousel-inner .carousel-item img {
 .blog .container .reservation .container-fluid input {
   border-radius: 10px;
   margin-bottom: 15px;
-  padding: 23px;
+  height: 45px;
 }
 
 .blog .container .reservation .container-fluid select {
   border-radius: 10px;
-  height: 48px;
+  height: 45px;
 }
 
 .blog .container .reservation .container-fluid button {
   display: block;
-  margin: 40px auto 0 auto;
+  margin: 60px auto 0 auto;
   padding: 15px 30px;
   color: #f8f9fa;
   background-color: #dc3545;
@@ -10781,6 +10878,10 @@ body header .carousel-inner .carousel-item img {
 .blog .container .reservation .container-fluid button:hover {
   color: #dc3545;
   background-color: #f8f9fa;
+}
+
+.blog .container .social {
+  padding-bottom: 100px;
 }
 
 .blog .container .social .titre {
@@ -10818,7 +10919,7 @@ body header .carousel-inner .carousel-item img {
 }
 
 .blog .container .social .photo .n2 {
-  right: 30%;
+  right: 23%;
 }
 
 .blog .container .social .photo span {
@@ -10827,6 +10928,7 @@ body header .carousel-inner .carousel-item img {
 
 .blog .container .social .photo .texte {
   padding: 50px;
+  padding-left: 85px;
 }
 
 .blog .container .social .photo .texte h5 {
@@ -10838,6 +10940,7 @@ body header .carousel-inner .carousel-item img {
   margin: 0 auto;
   padding: 15px 30px;
   color: #f8f9fa;
+  font-weight: bold;
   background-color: #dc3545;
   border-radius: 30px;
   border: 1px solid #dc3545;
@@ -10846,6 +10949,16 @@ body header .carousel-inner .carousel-item img {
 .blog .container .social .bouton button:hover {
   color: #dc3545;
   background-color: #f8f9fa;
+}
+
+.blog .container .social .gauche {
+  bottom: 0;
+  left: 0;
+}
+
+.blog .container .social .droite {
+  bottom: 0;
+  right: 0;
 }
 
 .testimonial {
@@ -10869,6 +10982,8 @@ body header .carousel-inner .carousel-item img {
 
 .testimonial .container-fluid {
   color: #f8f9fa;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .testimonial .container-fluid .bordure {
@@ -10886,10 +11001,10 @@ body header .carousel-inner .carousel-item img {
 }
 
 .testimonial .container-fluid img {
-  height: 160px;
-  width: 160px;
+  height: 155px;
+  width: 155px;
   border-radius: 50%;
-  border: 5px solid lightgrey;
+  border: 5px solid #f8f9fa;
 }
 
 .contact {
@@ -10927,8 +11042,17 @@ body header .carousel-inner .carousel-item img {
 
 .about {
   background-image: url("../img/footer_background.jpg");
+  background-position: center;
   color: #f8f9fa;
   padding: 3rem;
+}
+
+.about .position-absolute {
+  top: 0;
+  left: 0;
+  background-image: url("../img/footer_bottom_decoration_img.png");
+  width: 100%;
+  height: 15px;
 }
 
 .about p {
@@ -10944,6 +11068,10 @@ body header .carousel-inner .carousel-item img {
 
 .about .espace {
   margin-top: 2rem;
+}
+
+.about .espace .padr {
+  padding-right: 105px;
 }
 
 .about button {
@@ -10964,5 +11092,6 @@ body header .carousel-inner .carousel-item img {
   background-color: #dc3545;
   color: #f8f9fa;
   padding: 30px;
+  font-size: 15px;
 }
 /*# sourceMappingURL=main.css.map */

@@ -4,6 +4,7 @@
     padding-bottom: 50px
     .container
         background-color: $light
+        border: 1px solid lightgrey
         .story
             h2 
                 font-family: Courgette
@@ -12,11 +13,23 @@
             span 
                 color: $danger
                 font-size: 50px
+            img:first-child
+                position: absolute
+                left: 0
+            .droite
+                position: absolute
+                right: 0
         .menu 
             h2, h3
                 font-family: Courgette
+            .lgn
+                border-right: 1px solid lightgrey
             .icone
                 border-right: 1px solid lightgrey
+                &:hover
+                    border-right: 3px solid $danger
+                    i 
+                        color: $danger
                 h3 
                     border-bottom: 1px solid lightgrey
                     margin-bottom: 0
@@ -31,33 +44,38 @@
             span 
                 color: $danger
                 font-size: 50px
-            .rangee
-                border-bottom: 1px dotted lightgrey
-                padding-top: 10px
             .boite
                 img 
-                    height: 80px
                     width: 80px
+                    height: 80px
                     border-radius: 50%
                     border: 4px solid lightgrey
                     margin: 0 10px 10px 0
-            h6 
-                font-weight: bold
-                margin-bottom: 0
-                padding-left: 10px
-                padding-top: 5px
-            p 
-                padding-left: 10px
-            button 
-                background-color: lightgrey
-                color: $danger
-                padding: 0 20px
-                border: 0
-                position: relative
-                top: 25%
+            tr 
+                border-bottom: 1px dotted lightgrey
+                td 
+                    padding: 10px 0
+                    h6 
+                        font-weight: bold
+                        margin-bottom: 0
+                        padding-top: 5px
+                    .argent 
+                        background-color: lightgrey
+                        color: $danger
+                        padding: 0 15px
+                        margin-top: 28px
+                        margin-left: 10px
+            .gauche
+                position: absolute
+                bottom: 0
                 left: 0
+            .droite 
+                position: absolute
+                bottom: 0
+                right: 0
 .staff
     background-image: url("../img/team_background.jpg")
+    background-position: center
     text-align: center
     color: $light
     .titre
