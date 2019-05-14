@@ -10568,7 +10568,7 @@ body {
 }
 
 body header .container {
-  right: 2%;
+  right: 6%;
   position: absolute;
   z-index: 2;
   top: 2%;
@@ -10579,14 +10579,14 @@ body header .container .navbar {
 }
 
 body header .container .navbar ul {
-  border-top: 2px solid #f8f9fa;
-  border-bottom: 2px solid #f8f9fa;
+  border-top: 1px solid #f8f9fa;
+  border-bottom: 1px solid #f8f9fa;
 }
 
 body header .container .navbar ul li a {
   font-size: 12px;
   color: #f8f9fa;
-  padding: 15px 18px;
+  padding: 15px 28px;
 }
 
 body header .container .navbar ul li a:hover {
@@ -10600,6 +10600,7 @@ body header .container .navbar ul li .actif {
 body header .container .navbar img {
   display: block;
   margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 body header .carousel-indicators li {
@@ -10619,13 +10620,12 @@ body header .carousel-indicators .active .rond {
   height: 15px;
   width: 15px;
   border: 3px solid #343a40;
-  z-index: 2;
   border-radius: 50%;
 }
 
 body header .carousel-inner .carousel-item img {
-  -webkit-filter: brightness(50%);
-          filter: brightness(50%);
+  -webkit-filter: brightness(20%);
+          filter: brightness(20%);
 }
 
 body header .main-text {
@@ -10643,10 +10643,14 @@ body header .main-text h1 .rouge {
   color: #dc3545;
 }
 
+body header .main-text h1 span {
+  font-size: 75px;
+}
+
 body header .main-text button {
   border: 0;
   margin-top: 3rem;
-  border-radius: 20px;
+  border-radius: 35px;
   padding: 15px 30px;
 }
 
@@ -10677,10 +10681,16 @@ body header .decoration {
 .info .container {
   background-color: #f8f9fa;
   border: 1px solid lightgrey;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .info .container .story h2 {
   font-family: Courgette;
+}
+
+.info .container .story h2 + img {
+  margin-top: -25px;
 }
 
 .info .container .story p {
@@ -10704,6 +10714,10 @@ body header .decoration {
 
 .info .container .menu h2, .info .container .menu h3 {
   font-family: Courgette;
+}
+
+.info .container .menu h2 + img {
+  margin-top: -30px;
 }
 
 .info .container .menu .lgn {
@@ -10759,13 +10773,17 @@ body header .decoration {
 }
 
 .info .container .menu tr td {
-  padding: 10px 0;
+  padding: 10px 0 0 0;
 }
 
 .info .container .menu tr td h6 {
   font-weight: bold;
   margin-bottom: 0;
   padding-top: 5px;
+}
+
+.info .container .menu tr td p {
+  font-size: 15px;
 }
 
 .info .container .menu tr td .argent {
@@ -10789,8 +10807,10 @@ body header .decoration {
 }
 
 .staff {
-  background-image: url("../img/team_background.jpg");
-  background-position: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5))), url("../img/team_background.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5) rgba(0, 0, 0, 0.5)), url("../img/team_background.jpg");
+  background-position: 48% 42%;
+  background-size: 800%;
   text-align: center;
   color: #f8f9fa;
 }
@@ -10800,6 +10820,10 @@ body header .decoration {
   font-family: Courgette;
 }
 
+.staff .titre h2 + img {
+  margin-top: -35px;
+}
+
 .staff .titre span {
   color: #dc3545;
   font-size: 50px;
@@ -10807,6 +10831,7 @@ body header .decoration {
 
 .staff .container img {
   border-bottom: 1px solid #6c757d;
+  height: 350px;
 }
 
 .blog {
@@ -10832,12 +10857,16 @@ body header .decoration {
   font-family: Courgette;
 }
 
+.blog .container .reservation h2 + img {
+  margin-top: -17px;
+}
+
 .blog .container .reservation span {
   color: #dc3545;
   font-size: 50px;
 }
 
-.blog .container .reservation .container-fluid .col-sm-8 {
+.blog .container .reservation .container-fluid .col-8 {
   background-image: url("../img/book_table_bg.jpg");
   background-position: center;
   border-radius: 10px;
@@ -10857,18 +10886,18 @@ body header .decoration {
 .blog .container .reservation .container-fluid input {
   border-radius: 10px;
   margin-bottom: 15px;
-  height: 45px;
+  height: 44px;
 }
 
 .blog .container .reservation .container-fluid select {
   border-radius: 10px;
-  height: 45px;
+  height: 44px;
 }
 
 .blog .container .reservation .container-fluid button {
   display: block;
   margin: 60px auto 0 auto;
-  padding: 15px 30px;
+  padding: 13px 30px;
   color: #f8f9fa;
   background-color: #dc3545;
   border-radius: 30px;
@@ -10888,6 +10917,10 @@ body header .decoration {
   padding: 4rem 0;
   font-family: Courgette;
   text-align: center;
+}
+
+.blog .container .social .titre h2 + img {
+  margin-top: -35px;
 }
 
 .blog .container .social .titre span {
@@ -10915,7 +10948,7 @@ body header .decoration {
 }
 
 .blog .container .social .photo .n1 {
-  left: 17%;
+  left: 13%;
 }
 
 .blog .container .social .photo .n2 {
@@ -10926,19 +10959,26 @@ body header .decoration {
   font-size: 30px;
 }
 
+.blog .container .social .photo .gras {
+  font-weight: bold;
+}
+
 .blog .container .social .photo .texte {
   padding: 50px;
-  padding-left: 85px;
 }
 
 .blog .container .social .photo .texte h5 {
   font-weight: bold;
 }
 
+.blog .container .social .photo .texte p {
+  font-size: 15px;
+}
+
 .blog .container .social .bouton button {
   display: block;
   margin: 0 auto;
-  padding: 15px 30px;
+  padding: 13px 30px;
   color: #f8f9fa;
   font-weight: bold;
   background-color: #dc3545;
@@ -10962,7 +11002,10 @@ body header .decoration {
 }
 
 .testimonial {
-  background-image: url("../img/testimonials_background.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5))), url("../img/testimonials_background.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5) rgba(0, 0, 0, 0.5)), url("../img/testimonials_background.jpg");
+  background-position: 50% 82%;
+  background-size: 1200%;
   padding-bottom: 4rem;
 }
 
@@ -10978,6 +11021,10 @@ body header .decoration {
 
 .testimonial .titre h2 {
   color: #f8f9fa;
+}
+
+.testimonial .titre h2 + img {
+  margin-top: -35px;
 }
 
 .testimonial .container-fluid {
@@ -11001,8 +11048,8 @@ body header .decoration {
 }
 
 .testimonial .container-fluid img {
-  height: 155px;
-  width: 155px;
+  height: 170px;
+  width: 170px;
   border-radius: 50%;
   border: 5px solid #f8f9fa;
 }
@@ -11017,9 +11064,18 @@ body header .decoration {
   font-family: Courgette;
 }
 
+.contact .titre h2 + img {
+  margin-top: -35px;
+}
+
 .contact .titre span {
   color: #dc3545;
   font-size: 50px;
+}
+
+.contact .container-fluid {
+  padding-left: 80px;
+  padding-right: 80px;
 }
 
 .contact .container-fluid .row .col-sm-4 {
@@ -11041,7 +11097,8 @@ body header .decoration {
 }
 
 .about {
-  background-image: url("../img/footer_background.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5))), url("../img/footer_background.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5) rgba(0, 0, 0, 0.5)), url("../img/footer_background.jpg");
   background-position: center;
   color: #f8f9fa;
   padding: 3rem;
@@ -11066,19 +11123,36 @@ body header .decoration {
   margin-bottom: 2rem;
 }
 
+.about .image img {
+  height: 70px;
+  width: 70px;
+}
+
+.about .image .col-md-2 {
+  margin-right: 19px;
+}
+
+.about .image .pleft {
+  padding-left: 15px;
+}
+
+.about .image .mtop {
+  margin-top: 16px;
+}
+
 .about .espace {
   margin-top: 2rem;
 }
 
-.about .espace .padr {
-  padding-right: 105px;
+.about .mright {
+  margin-right: -15px;
 }
 
 .about button {
   background-color: #dc3545;
   color: #f8f9fa;
   border-radius: 20px;
-  padding: 8px 9px;
+  padding: 6px 13px;
   border: 2px solid #f8f9fa;
 }
 
