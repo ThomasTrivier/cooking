@@ -31,6 +31,9 @@
     background-position: center
     color: $light
     padding: 3rem
+    @media screen and (max-width: 576px)
+        background-repeat: no-repeat
+        background-size: cover
     .position-absolute
         top: 0
         left: 0
@@ -50,6 +53,8 @@
             width: 70px
         .col-md-2
             margin-right: 19px
+            @media screen and (max-width: 576px)
+                margin-right: 0
         .pleft
             padding-left: 15px
         .mtop
@@ -58,6 +63,8 @@
         margin-top: 2rem
     .mright
         margin-right: -15px
+        @media screen and (max-width: 576px)
+            margin-right: -10px
     button 
         background-color: $danger
         color: $light
@@ -68,6 +75,11 @@
             background-color: $light
             color: $danger
             border: 2px solid $danger
+        @media screen and (max-width: 576px)
+            padding: 2px 5px
+            margin: 0
+            font-size: 12px
+            border: 1px solid $light
 
 .copyright
     background-color: $danger

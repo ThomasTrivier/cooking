@@ -8,24 +8,38 @@
         .reservation
             img:first-child
                 left: 0
+                @media screen and (max-width: 576px)
+                    height: 80px
+                    width: 80px
             .droite
                 right: 0
+                @media screen and (max-width: 576px)
+                    height: 80px
+                    width: 80px
             h2 
                 font-family: Courgette
+                @media screen and (max-width: 576px)
+                    margin-top: 30px
             h2+img 
                 margin-top: -17px
             span 
                 color: $danger
                 font-size: 50px
             .container-fluid
-                .col-8
+                .col-md-8
                     background-image: url("../img/book_table_bg.jpg")
                     background-position: center
                     border-radius: 10px
                     padding: 50px 100px
+                    @media screen and (max-width: 576px)
+                        padding: 30px
+                        background-repeat: no-repeat
+                        background-size: cover
                 p 
                     color: $light
                     margin-bottom: 3rem
+                    @media screen and (max-width: 576px)
+                        margin-bottom: 2rem
                 span 
                     font-size: 30px
                     color: $light
@@ -36,6 +50,8 @@
                 select 
                     border-radius: 10px
                     height: 44px
+                    @media screen and (max-width: 576px)
+                        margin-bottom: 15px
                 button
                     display: block
                     margin: 60px auto 0 auto
@@ -44,6 +60,8 @@
                     background-color: $danger
                     border-radius: 30px
                     border: 2px solid $danger
+                    @media screen and (max-width: 576px)
+                        margin-top: 20px
                     &:hover
                         color: $danger
                         background-color: $light
@@ -71,12 +89,19 @@
                     position: absolute
                     z-index: 2
                     bottom: 32%
+                    @media screen and (max-width: 576px)
+                        padding: 0 5px
+                        bottom: 43%
                 .n1
                     left: 13%
+                    @media screen and (max-width: 576px)
+                        left: 8%
                 .n2 
                     right: 23%
                 span 
                     font-size: 30px
+                    @media screen and (max-width: 576px)
+                        font-size: 25px
                 .gras 
                     font-weight: bold
                 .texte
@@ -101,18 +126,28 @@
             .gauche
                 bottom: 0
                 left: 0
+                @media screen and (max-width: 576px)
+                    height: 80px
+                    width: 80px
             .droite
                 bottom: 0
                 right: 0
+                @media screen and (max-width: 576px)
+                    height: 80px
+                    width: 80px
 
 .testimonial
     background: linear-gradient(rgba(0,0,0,0.5) rgba(0,0,0,0.5)), url("../img/testimonials_background.jpg")
     background-position: 50% 82%
     background-size: 1200%
     padding-bottom: 4rem
+    @media screen and (max-width: 576px)
+        padding-bottom: 2rem
     .titre
         padding: 4rem
         font-family: Courgette
+        @media screen and (max-width: 576px)
+            padding-bottom: 0
         span 
             color: $danger
             font-size: 50px
@@ -137,3 +172,5 @@
             width: 170px
             border-radius: 50%
             border: 5px solid $light
+            @media screen and (max-width: 576px)
+                margin: 20px 0

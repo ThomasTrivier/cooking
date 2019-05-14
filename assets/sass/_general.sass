@@ -20,9 +20,15 @@
             img:first-child
                 position: absolute
                 left: 0
+                @media screen and (max-width: 576px)
+                    height: 80px
+                    width: 80px
             .droite
                 position: absolute
                 right: 0
+                @media screen and (max-width: 576px)
+                    height: 80px
+                    width: 80px
         .menu 
             h2, h3
                 font-family: Courgette
@@ -57,6 +63,8 @@
                     border-radius: 50%
                     border: 4px solid lightgrey
                     margin: 0 10px 10px 0
+                    @media screen and (max-width: 576px)
+                        margin: 12px 10px
             tr 
                 border-bottom: 1px dotted lightgrey
                 td 
@@ -67,26 +75,39 @@
                         padding-top: 5px
                     p 
                         font-size: 15px
+                        @media screen and (max-width: 576px)
+                            font-size: 13px
                     .argent 
                         background-color: lightgrey
                         color: $danger
                         padding: 0 15px
                         margin-top: 28px
                         margin-left: 10px
+                        @media screen and (max-width: 576px)
+                            margin-top: 42px
             .gauche
                 position: absolute
                 bottom: 0
                 left: 0
+                @media screen and (max-width: 576px)
+                    height: 80px
+                    width: 80px
             .droite 
                 position: absolute
                 bottom: 0
                 right: 0
+                @media screen and (max-width: 576px)
+                    height: 80px
+                    width: 80px
 .staff
     background: linear-gradient(rgba(0,0,0,0.5) rgba(0,0,0,0.5)), url("../img/team_background.jpg")
     background-position: 48% 42%
     background-size: 800%
     text-align: center
     color: $light
+    @media screen and (max-width: 576px)
+        background-repeat: no-repeat
+        background-size: cover
     .titre
         padding: 4rem 0
         font-family: Courgette
