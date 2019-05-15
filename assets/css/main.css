@@ -10982,15 +10982,26 @@ body header .decoration {
   height: 44px;
 }
 
+.blog .container .reservation .container-fluid input::-webkit-input-placeholder {
+  color: #343a40;
+}
+
+.blog .container .reservation .container-fluid input:-ms-input-placeholder {
+  color: #343a40;
+}
+
+.blog .container .reservation .container-fluid input::-ms-input-placeholder {
+  color: #343a40;
+}
+
+.blog .container .reservation .container-fluid input::placeholder {
+  color: #343a40;
+}
+
 .blog .container .reservation .container-fluid select {
   border-radius: 10px;
   height: 44px;
-}
-
-@media screen and (max-width: 576px) {
-  .blog .container .reservation .container-fluid select {
-    margin-bottom: 15px;
-  }
+  margin-bottom: 15px;
 }
 
 .blog .container .reservation .container-fluid button {
